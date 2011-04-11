@@ -1,0 +1,947 @@
+{
+  "page": 1,
+  "pageSize": 100,
+  "totalPages": 1,
+  "totalItems": 15,
+  "items": [
+    {
+      "id": 1,
+      "text": "Sample Story A",
+      "size": "S",
+      "color": "yellow",
+      "priority": "1",
+      "deadline": "2011-04-06T00:00:00",
+      "status": "started",
+      "project": {
+        "id": 21222,
+        "name": "Sample Project"
+      },
+      "phase": {
+        "id": 121789,
+        "name": "Complete"
+      },
+      "creator": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "owner": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "milestones": [
+        {
+          "id": 1858137,
+          "phase": {
+            "id": 121786,
+            "name": "Backlog"
+          },
+          "startTime": "2011-04-05T12:59:40",
+          "endTime": "2011-04-05T15:14:31",
+          "duration": 8091
+        },
+        {
+          "id": 1859813,
+          "phase": {
+            "id": 121787,
+            "name": "Ready"
+          },
+          "startTime": "2011-04-05T15:14:31",
+          "endTime": "2011-04-06T20:07:47",
+          "duration": 103996
+        },
+        {
+          "id": 1871933,
+          "phase": {
+            "id": 121788,
+            "name": "Working"
+          },
+          "startTime": "2011-04-06T20:07:47",
+          "endTime": "2011-04-07T02:19:41",
+          "duration": 22314
+        },
+        {
+          "id": 1873430,
+          "phase": {
+            "id": 122346,
+            "name": "QA"
+          },
+          "startTime": "2011-04-07T02:19:41",
+          "endTime": "2011-04-07T14:47:30",
+          "duration": 44869
+        },
+        {
+          "id": 1877448,
+          "phase": {
+            "id": 121789,
+            "name": "Complete"
+          },
+          "startTime": "2011-04-07T14:47:30",
+          "duration": 14321
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Sample Story B",
+      "size": "M",
+      "color": "blue",
+      "priority": "2",
+      "deadline": "2011-04-07T00:00:00",
+      "status": "finished",
+      "project": {
+        "id": 21222,
+        "name": "Sample Project"
+      },
+      "phase": {
+        "id": 121790,
+        "name": "Archive"
+      },
+      "creator": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "owner": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "milestones": [
+        {
+          "id": 1858141,
+          "phase": {
+            "id": 121786,
+            "name": "Backlog"
+          },
+          "startTime": "2011-04-05T13:00:08",
+          "endTime": "2011-04-05T13:02:20",
+          "duration": 132
+        },
+        {
+          "id": 1858164,
+          "phase": {
+            "id": 121787,
+            "name": "Ready"
+          },
+          "startTime": "2011-04-05T13:02:20",
+          "endTime": "2011-04-05T15:14:27",
+          "duration": 7927
+        },
+        {
+          "id": 1859812,
+          "phase": {
+            "id": 121788,
+            "name": "Working"
+          },
+          "startTime": "2011-04-05T15:14:27",
+          "endTime": "2011-04-06T16:49:44",
+          "duration": 92117
+        },
+        {
+          "id": 1870179,
+          "phase": {
+            "id": 121789,
+            "name": "Complete"
+          },
+          "startTime": "2011-04-06T16:49:44",
+          "endTime": "2011-04-06T16:49:49",
+          "duration": 5
+        },
+        {
+          "id": 1870180,
+          "phase": {
+            "id": 121790,
+            "name": "Archive"
+          },
+          "startTime": "2011-04-06T16:49:49",
+          "duration": 93382
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Sample Story C",
+      "size": "L",
+      "color": "red",
+      "priority": "3",
+      "deadline": "2011-04-03T00:00:00",
+      "status": "finished",
+      "project": {
+        "id": 21222,
+        "name": "Sample Project"
+      },
+      "phase": {
+        "id": 121790,
+        "name": "Archive"
+      },
+      "creator": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "owner": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "milestones": [
+        {
+          "id": 1858150,
+          "phase": {
+            "id": 121787,
+            "name": "Ready"
+          },
+          "startTime": "2011-04-05T13:01:16",
+          "endTime": "2011-04-06T16:49:42",
+          "duration": 100106
+        },
+        {
+          "id": 1870178,
+          "phase": {
+            "id": 121788,
+            "name": "Working"
+          },
+          "startTime": "2011-04-06T16:49:42",
+          "endTime": "2011-04-06T16:49:52",
+          "duration": 10
+        },
+        {
+          "id": 1870181,
+          "phase": {
+            "id": 121789,
+            "name": "Complete"
+          },
+          "startTime": "2011-04-06T16:49:52",
+          "endTime": "2011-04-06T20:07:53",
+          "duration": 11881
+        },
+        {
+          "id": 1871935,
+          "phase": {
+            "id": 121790,
+            "name": "Archive"
+          },
+          "startTime": "2011-04-06T20:07:53",
+          "duration": 81498
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Sample Story D",
+      "size": "",
+      "color": "grey",
+      "priority": "",
+      "status": "finished",
+      "project": {
+        "id": 21222,
+        "name": "Sample Project"
+      },
+      "phase": {
+        "id": 121790,
+        "name": "Archive"
+      },
+      "creator": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "owner": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "milestones": [
+        {
+          "id": 1870174,
+          "phase": {
+            "id": 121786,
+            "name": "Backlog"
+          },
+          "startTime": "2011-04-06T16:49:20",
+          "endTime": "2011-04-06T16:49:55",
+          "duration": 35
+        },
+        {
+          "id": 1870182,
+          "phase": {
+            "id": 121790,
+            "name": "Archive"
+          },
+          "startTime": "2011-04-06T16:49:55",
+          "duration": 93376
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Sample Story E",
+      "size": "",
+      "color": "green",
+      "priority": "",
+      "status": "started",
+      "project": {
+        "id": 21222,
+        "name": "Sample Project"
+      },
+      "phase": {
+        "id": 121789,
+        "name": "Complete"
+      },
+      "creator": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "owner": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "milestones": [
+        {
+          "id": 1870175,
+          "phase": {
+            "id": 121786,
+            "name": "Backlog"
+          },
+          "startTime": "2011-04-06T16:49:24",
+          "endTime": "2011-04-06T20:07:49",
+          "duration": 11905
+        },
+        {
+          "id": 1871934,
+          "phase": {
+            "id": 121787,
+            "name": "Ready"
+          },
+          "startTime": "2011-04-06T20:07:49",
+          "endTime": "2011-04-07T14:47:32",
+          "duration": 67183
+        },
+        {
+          "id": 1877449,
+          "phase": {
+            "id": 121788,
+            "name": "Working"
+          },
+          "startTime": "2011-04-07T14:47:32",
+          "endTime": "2011-04-07T15:33:37",
+          "duration": 2765
+        },
+        {
+          "id": 1877901,
+          "phase": {
+            "id": 122346,
+            "name": "QA"
+          },
+          "startTime": "2011-04-07T15:33:37",
+          "endTime": "2011-04-07T15:33:40",
+          "duration": 3
+        },
+        {
+          "id": 1877903,
+          "phase": {
+            "id": 121789,
+            "name": "Complete"
+          },
+          "startTime": "2011-04-07T15:33:40",
+          "duration": 11551
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Sample Story F",
+      "size": "",
+      "color": "purple",
+      "priority": "",
+      "status": "finished",
+      "project": {
+        "id": 21222,
+        "name": "Sample Project"
+      },
+      "phase": {
+        "id": 121790,
+        "name": "Archive"
+      },
+      "creator": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "owner": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "milestones": [
+        {
+          "id": 1870176,
+          "phase": {
+            "id": 121787,
+            "name": "Ready"
+          },
+          "startTime": "2011-04-06T16:49:30",
+          "endTime": "2011-04-06T16:49:36",
+          "duration": 6
+        },
+        {
+          "id": 1870177,
+          "phase": {
+            "id": 121788,
+            "name": "Working"
+          },
+          "startTime": "2011-04-06T16:49:36",
+          "endTime": "2011-04-06T17:01:53",
+          "duration": 737
+        },
+        {
+          "id": 1870344,
+          "phase": {
+            "id": 122346,
+            "name": "QA"
+          },
+          "startTime": "2011-04-06T17:01:53",
+          "endTime": "2011-04-06T17:02:06",
+          "duration": 13
+        },
+        {
+          "id": 1870349,
+          "phase": {
+            "id": 121789,
+            "name": "Complete"
+          },
+          "startTime": "2011-04-06T17:02:06",
+          "endTime": "2011-04-07T14:47:09",
+          "duration": 78303
+        },
+        {
+          "id": 1877441,
+          "phase": {
+            "id": 121790,
+            "name": "Archive"
+          },
+          "startTime": "2011-04-07T14:47:09",
+          "duration": 14342
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "hgfh",
+      "size": "",
+      "color": "grey",
+      "priority": "",
+      "status": "finished",
+      "project": {
+        "id": 21222,
+        "name": "Sample Project"
+      },
+      "phase": {
+        "id": 121790,
+        "name": "Archive"
+      },
+      "creator": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "owner": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "milestones": [
+        {
+          "id": 1870347,
+          "phase": {
+            "id": 121787,
+            "name": "Ready"
+          },
+          "startTime": "2011-04-06T17:02:01",
+          "endTime": "2011-04-06T17:02:03",
+          "duration": 2
+        },
+        {
+          "id": 1870348,
+          "phase": {
+            "id": 121788,
+            "name": "Working"
+          },
+          "startTime": "2011-04-06T17:02:03",
+          "endTime": "2011-04-06T17:02:14",
+          "duration": 11
+        },
+        {
+          "id": 1870354,
+          "phase": {
+            "id": 122346,
+            "name": "QA"
+          },
+          "startTime": "2011-04-06T17:02:14",
+          "endTime": "2011-04-06T20:07:44",
+          "duration": 11130
+        },
+        {
+          "id": 1871931,
+          "phase": {
+            "id": 121789,
+            "name": "Complete"
+          },
+          "startTime": "2011-04-06T20:07:44",
+          "endTime": "2011-04-07T02:19:47",
+          "duration": 22323
+        },
+        {
+          "id": 1873431,
+          "phase": {
+            "id": 121790,
+            "name": "Archive"
+          },
+          "startTime": "2011-04-07T02:19:47",
+          "duration": 59184
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "lkjh",
+      "size": "",
+      "color": "grey",
+      "priority": "",
+      "status": "started",
+      "project": {
+        "id": 21222,
+        "name": "Sample Project"
+      },
+      "phase": {
+        "id": 121789,
+        "name": "Complete"
+      },
+      "creator": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "owner": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "milestones": [
+        {
+          "id": 1870351,
+          "phase": {
+            "id": 121787,
+            "name": "Ready"
+          },
+          "startTime": "2011-04-06T17:02:10",
+          "endTime": "2011-04-06T17:02:13",
+          "duration": 3
+        },
+        {
+          "id": 1870353,
+          "phase": {
+            "id": 121788,
+            "name": "Working"
+          },
+          "startTime": "2011-04-06T17:02:13",
+          "endTime": "2011-04-06T20:07:46",
+          "duration": 11133
+        },
+        {
+          "id": 1871932,
+          "phase": {
+            "id": 122346,
+            "name": "QA"
+          },
+          "startTime": "2011-04-06T20:07:46",
+          "endTime": "2011-04-07T14:47:18",
+          "duration": 67172
+        },
+        {
+          "id": 1877444,
+          "phase": {
+            "id": 121789,
+            "name": "Complete"
+          },
+          "startTime": "2011-04-07T14:47:18",
+          "duration": 14333
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "more",
+      "size": "",
+      "color": "grey",
+      "priority": "",
+      "status": "started",
+      "project": {
+        "id": 21222,
+        "name": "Sample Project"
+      },
+      "phase": {
+        "id": 122346,
+        "name": "QA"
+      },
+      "creator": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "owner": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "milestones": [
+        {
+          "id": 1871936,
+          "phase": {
+            "id": 121786,
+            "name": "Backlog"
+          },
+          "startTime": "2011-04-06T20:07:58",
+          "endTime": "2011-04-06T20:08:14",
+          "duration": 16
+        },
+        {
+          "id": 1871941,
+          "phase": {
+            "id": 121787,
+            "name": "Ready"
+          },
+          "startTime": "2011-04-06T20:08:14",
+          "endTime": "2011-04-07T02:19:38",
+          "duration": 22284
+        },
+        {
+          "id": 1873429,
+          "phase": {
+            "id": 121788,
+            "name": "Working"
+          },
+          "startTime": "2011-04-07T02:19:38",
+          "endTime": "2011-04-07T14:47:26",
+          "duration": 44868
+        },
+        {
+          "id": 1877447,
+          "phase": {
+            "id": 122346,
+            "name": "QA"
+          },
+          "startTime": "2011-04-07T14:47:26",
+          "duration": 14325
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "elsewhere",
+      "size": "",
+      "color": "grey",
+      "priority": "",
+      "status": "started",
+      "project": {
+        "id": 21222,
+        "name": "Sample Project"
+      },
+      "phase": {
+        "id": 121788,
+        "name": "Working"
+      },
+      "creator": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "owner": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "milestones": [
+        {
+          "id": 1871937,
+          "phase": {
+            "id": 121786,
+            "name": "Backlog"
+          },
+          "startTime": "2011-04-06T20:08:03",
+          "endTime": "2011-04-06T20:08:11",
+          "duration": 8
+        },
+        {
+          "id": 1871940,
+          "phase": {
+            "id": 121787,
+            "name": "Ready"
+          },
+          "startTime": "2011-04-06T20:08:11",
+          "endTime": "2011-04-07T02:19:51",
+          "duration": 22300
+        },
+        {
+          "id": 1873432,
+          "phase": {
+            "id": 121788,
+            "name": "Working"
+          },
+          "startTime": "2011-04-07T02:19:51",
+          "duration": 59180
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "text": "foo",
+      "size": "",
+      "color": "grey",
+      "priority": "",
+      "status": "started",
+      "project": {
+        "id": 21222,
+        "name": "Sample Project"
+      },
+      "phase": {
+        "id": 121787,
+        "name": "Ready"
+      },
+      "creator": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "owner": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "milestones": [
+        {
+          "id": 1871938,
+          "phase": {
+            "id": 121786,
+            "name": "Backlog"
+          },
+          "startTime": "2011-04-06T20:08:05",
+          "endTime": "2011-04-07T14:47:22",
+          "duration": 67157
+        },
+        {
+          "id": 1877446,
+          "phase": {
+            "id": 121787,
+            "name": "Ready"
+          },
+          "startTime": "2011-04-07T14:47:22",
+          "duration": 14329
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "bar",
+      "size": "",
+      "color": "grey",
+      "priority": "",
+      "status": "started",
+      "project": {
+        "id": 21222,
+        "name": "Sample Project"
+      },
+      "phase": {
+        "id": 121788,
+        "name": "Working"
+      },
+      "creator": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "owner": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "milestones": [
+        {
+          "id": 1871939,
+          "phase": {
+            "id": 121786,
+            "name": "Backlog"
+          },
+          "startTime": "2011-04-06T20:08:08",
+          "endTime": "2011-04-06T20:08:16",
+          "duration": 8
+        },
+        {
+          "id": 1871942,
+          "phase": {
+            "id": 121787,
+            "name": "Ready"
+          },
+          "startTime": "2011-04-06T20:08:16",
+          "endTime": "2011-04-07T14:47:21",
+          "duration": 67145
+        },
+        {
+          "id": 1877445,
+          "phase": {
+            "id": 121788,
+            "name": "Working"
+          },
+          "startTime": "2011-04-07T14:47:21",
+          "duration": 14330
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "text": "jjjh",
+      "size": "",
+      "color": "grey",
+      "priority": "",
+      "status": "planned",
+      "project": {
+        "id": 21222,
+        "name": "Sample Project"
+      },
+      "phase": {
+        "id": 121786,
+        "name": "Backlog"
+      },
+      "creator": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "owner": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "milestones": [
+        {
+          "id": 1873433,
+          "phase": {
+            "id": 121786,
+            "name": "Backlog"
+          },
+          "startTime": "2011-04-07T02:20:00",
+          "duration": 59171
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "text": "kjfi",
+      "size": "",
+      "color": "green",
+      "priority": "",
+      "status": "planned",
+      "project": {
+        "id": 21222,
+        "name": "Sample Project"
+      },
+      "phase": {
+        "id": 121786,
+        "name": "Backlog"
+      },
+      "creator": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "owner": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "milestones": [
+        {
+          "id": 1877907,
+          "phase": {
+            "id": 121786,
+            "name": "Backlog"
+          },
+          "startTime": "2011-04-07T15:34:01",
+          "duration": 11530
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "text": "sdffggh",
+      "size": "",
+      "color": "orange",
+      "priority": "",
+      "status": "planned",
+      "project": {
+        "id": 21222,
+        "name": "Sample Project"
+      },
+      "phase": {
+        "id": 121786,
+        "name": "Backlog"
+      },
+      "creator": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "owner": {
+        "id": 643,
+        "name": "Aaron Crickenberger",
+        "userName": "acrickenberger",
+        "email": "aaron.crickenberger@gmail.com"
+      },
+      "milestones": [
+        {
+          "id": 1877908,
+          "phase": {
+            "id": 121786,
+            "name": "Backlog"
+          },
+          "startTime": "2011-04-07T15:34:05",
+          "duration": 11526
+        }
+      ]
+    }
+  ]
+}
+

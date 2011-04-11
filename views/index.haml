@@ -1,0 +1,10 @@
+.grid_4 &nbsp;
+.grid_8(style="height:100%; vertical-align:middle; text-align:center")
+  %h1(style="font-size:6em;") ZenDash
+  %p A minimal* dashboard for your AgileZen projects
+  - for project in @projects
+    %h2
+      %a(href="/dash/#{project['id']}") #{project['name']}
+.grid_4 &nbsp;
+.clear
+.grid_16(style="text-align:center;font-size:.8em") *Where minimal means there is a large TODO list

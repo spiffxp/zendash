@@ -1,0 +1,27 @@
+{
+  "page": 1,
+  "pageSize": 100,
+  "totalPages": 1,
+  "totalItems": 2,
+  "items": [
+    {
+      "id": 45280,
+      "name": "Administrators",
+      "access": "none",
+      "members": [
+        {
+          "id": 643,
+          "name": "Aaron Crickenberger",
+          "userName": "acrickenberger",
+          "email": "aaron.crickenberger@gmail.com"
+        }
+      ]
+    },
+    {
+      "id": 45281,
+      "name": "Members",
+      "access": "none",
+      "members": []
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+.grid_12
+  %h1 #{@project['name']}
+.grid_4
+  %p{:style => 'text-align:right'} Refreshes every 60 seconds
+.clear
+.grid_4
+  %h1 People
+  #users{:style => 'margin-left:2em'}
+    - for user in @users
+      %img{:src => user['gravatar_uri'], :width => 48, :height => 48}
+        %span{:style => 'font-size:2em'}= user['name']
+  %h1 Phases
+  #phases{:style => 'margin-left:2em'}
+    %dl
+      - for phase in @phases
+        %dt{:style => 'font-size:2em'} #{phase['name']} (#{phase['limit']})
+.grid_12 
+  %h1 Most Recent Cycle Times
+  #container
+  :javascript
+    var chart;
+    var storyInfo;
+    var refreshDelay = 60 * 1000;
+    
+    function reqData() {
+      // HACKHACK: work around chart being undefined when called by chart's load event
+      if (chart === undefined)
+        chart = this;
+      $.ajax({
+        url: "/chart_data/#{@project['id']}",
+        success: function(stuff) {
+          storyInfo = stuff.storyInfo;
+          $(storyInfo).each (function (i, si) {
+            si.finished = new Date(si.finished).toLocaleDateString();
+          });
+          $(stuff.series).each (function (i, series) {
+            if (i < chart.series.length)
+              chart.series[i].setData(series.data, false);
+            else
+              chart.addSeries(series, false);
+          });
+          chart.redraw();
+          chart.hideLoading();
+          setTimeout(reqData, refreshDelay);
+        },
+        cache: false
+      });
+    }
+
+    function storyUri(i) {
+      if (storyInfo !== undefined)
+        return "https://agilezen.com/project/#{@project['id']}/story/" + storyInfo[i].id;
+      else
+        return "";
+    }
+
+    $(document).ready(function() {
+      chart = new Highcharts.Chart({
+        chart: {
+          renderTo: 'container',
+          defaultSeriesType: 'bar',
+          // XXX: HighCharts bug - a 'bar' chart with no series at render time will act
+          //      as a 'column' chart unless we explicitly set inverted to true
+          inverted: true,
+          events: {
+            load: reqData
+          }
+        },
+        title: {
+          text: ''
+        },
+        xAxis: {
+          categories: [],
+          labels: {
+            formatter: function() {
+              var i = this.value;
+              if (storyInfo !== undefined) {
+                var s = storyInfo[i];
+                return '<span style="font-weight:bold;font-size:1.4em">' + 
+                          '<a href="' + storyUri(i) + '">' + s.text + '</a>' + 
+                       '</span><br>' +
+                       '<span style="font-style:italic;font-size:.8em">' + s.finished + '</span>';
+              } else {
+                return this.value;
+              }
+            },
+            style: {
+              color: '#000',
+              fontSize: '1.2em'
+            }
+          }
+        },
+        yAxis: {
+          min: 0,
+          title: {
+            text: 'Time (hours)'
+          }
+        },
+        legend: {
+          align: 'center',
+          verticalAlign: 'bottom',
+          y: 20,
+          floating: true,
+          backgroundColor: '#FFFFFF',
+          borderColor: '#CCC',
+          borderWidth: 1,
+          shadow: false,
+          reversed: true
+        },
+        tooltip: {
+          formatter: function() {
+            return '<b>' + this.series.name +'</b>: '+ this.y +'<br/>' +
+                   'Total: '+ this.point.stackTotal;
+          }
+        },
+        plotOptions: {
+          bar: {
+            borderWidth: 0,
+            shadow: false,
+            pointPadding: 0,
+            groupPadding: 0.05
+          },
+          series: {
+            stacking: 'normal',
+            cursor: 'pointer',
+            point: {
+              events: {
+                click: function() {
+                  window.location = storyUri(this.x);
+                }
+              }
+            }
+          }
+        },
+        series: []
+      });
+    });
+     

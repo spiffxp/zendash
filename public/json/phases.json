@@ -1,0 +1,46 @@
+{
+  "page": 1,
+  "pageSize": 100,
+  "totalPages": 1,
+  "totalItems": 6,
+  "items": [
+    {
+      "id": 121786,
+      "name": "Backlog",
+      "description": "Stories that will be worked on someday",
+      "index": 0
+    },
+    {
+      "id": 121787,
+      "name": "Ready",
+      "description": "Stories that are ready to be worked on",
+      "index": 1
+    },
+    {
+      "id": 121788,
+      "name": "Working",
+      "description": "Stories that are currently being worked on",
+      "index": 2
+    },
+    {
+      "id": 122346,
+      "name": "QA",
+      "description": "Stories being reviewed",
+      "index": 3,
+      "limit": 2
+    },
+    {
+      "id": 121789,
+      "name": "Complete",
+      "description": "Stories that have been completed",
+      "index": 4
+    },
+    {
+      "id": 121790,
+      "name": "Archive",
+      "description": "Stories that are history",
+      "index": 5
+    }
+  ]
+}
+
