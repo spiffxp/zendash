@@ -37,7 +37,7 @@ class ZenDash < Sinatra::Base
     # - Sorts stories by when they were finished
     # - Picks the five most recent stories
     def prep_stories(stories)
-      stories.select! { |s| s['milestones'].last['phase']['name'] == 'Archive' }
+      stories = stories.select { |s| s['milestones'].last['phase']['name'] == 'Archive' }
       stories.each { |s| s['finished'] = s['milestones'].last['startTime'] }
       stories.sort! { |x,y| y['finished'] <=> x['finished'] }
       stories[0..4]
@@ -47,7 +47,7 @@ class ZenDash < Sinatra::Base
     # - Excludes the 'Archive' phase from durations
     def prep_phases(phases)
       phases.reverse!
-      phases.select! { |p| p['name'] != 'Archive' }
+      phases.select { |p| p['name'] != 'Archive' }
     end
 
     # - Computes individual story-in-phase durations in hours instead of seconds
@@ -55,8 +55,7 @@ class ZenDash < Sinatra::Base
     def compute_story_info(stories)
       stories.collect do |s|
         durations = s['milestones'].to_hash do |m|
-          # TODO: Moot; there are still rounding errors client-side
-          { m['phase']['name'] => (m['duration'] / 3600.0).round(2) }
+          { m['phase']['name'] => m['duration'] / 3600.0 }
         end
         { :id => s['id'], :text => s['text'].abbrev_to(50), :finished => s['finished'], :durations => durations }
       end
